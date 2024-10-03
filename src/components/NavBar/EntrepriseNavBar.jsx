@@ -1,6 +1,8 @@
+import { AppBar } from '@mui/material';
 
-export const EntrepriseNavBar = () => {
+const EntrepriseNavBar = () => {
   return (
     <div>EntrepriseNavBar</div>
   )
 }
+export default EntrepriseNavBar

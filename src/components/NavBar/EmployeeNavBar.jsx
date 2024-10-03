@@ -1,6 +1,8 @@
+import { AppBar } from '@mui/material';
 
-export const EmployeeNavBar = () => {
+const EmployeeNavBar = () => {
   return (
     <div>EmployeeNavBar</div>
   )
 }
+export default EmployeeNavBar
