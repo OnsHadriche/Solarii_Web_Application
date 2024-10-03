@@ -34,7 +34,7 @@ const navItems = [
   "Services",
   "Marketpalce",
   "Formation",
-  "Contactez-nous",
+  "Contact",
 ];
 const settings = [
   {
@@ -93,7 +93,7 @@ function CustomerNavBar(props) {
   return (
     <Box sx={{ flexGrow: 1 }} color="primary">
       <HideOnScroll {...props}>
-        <AppBar component="nav">
+        <AppBar component="nav" >
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
               color="inherit"
@@ -104,11 +104,14 @@ function CustomerNavBar(props) {
             >
               <MenuIcon />
             </IconButton>
-            <Logo src={logo} />
+            <Logo src={logo} sx={{ display: { xs: "none", sm: "block" } }} />
 
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box sx={{ display: { xs: "none", sm: "flex" } }}>
               {navItems.map((page) => (
-                <Button key={page} sx={{ my: 2, color: "#264888" , fontWeight:'bold'}}>
+                <Button
+                  key={page}
+                  sx={{ my: 2, color: "#264888"}}
+                >
                   {page}
                 </Button>
               ))}
@@ -165,7 +168,7 @@ function CustomerNavBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: "block", sm: "none" },
