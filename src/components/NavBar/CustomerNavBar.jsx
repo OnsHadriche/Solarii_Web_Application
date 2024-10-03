@@ -29,13 +29,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import LogoutIcon from "@mui/icons-material/Logout";
 const drawerWidth = 240;
-const navItems = [
-  "Accueil",
-  "Services",
-  "Marketpalce",
-  "Formation",
-  "Contact",
-];
+const navItems = ["Accueil", "Services", "Marketpalce", "Formation", "Contact"];
 const settings = [
   {
     componentIcon: PersonIcon,
@@ -93,7 +87,7 @@ function CustomerNavBar(props) {
   return (
     <Box sx={{ flexGrow: 1 }} color="primary">
       <HideOnScroll {...props}>
-        <AppBar component="nav" >
+        <AppBar component="nav">
           <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
             <IconButton
               color="inherit"
@@ -106,57 +100,58 @@ function CustomerNavBar(props) {
             </IconButton>
             <Logo src={logo} sx={{ display: { xs: "none", sm: "block" } }} />
 
-            <Box sx={{ display: { xs: "none", sm: "flex" } }}>
-              {navItems.map((page) => (
-                <Button
-                  key={page}
-                  sx={{ my: 2, color: "#264888"}}
-                >
-                  {page}
-                </Button>
-              ))}
-              <Tooltip title="Open settings">
-                <Tooltip title="Open settings">
-                  <IconButton
-                    onClick={handleOpenUserMenu}
-                    sx={{ p: 0, marginLeft: 2 }}
-                  >
-                    <Avatar alt="Remy Sharp" src={user} />
-                  </IconButton>
-                </Tooltip>
-              </Tooltip>
-              <Menu
-                sx={{ mt: "45px" }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <ListItemIcon>
-                      <setting.componentIcon fontSize="small" />
-                    </ListItemIcon>
-                    <ListItemText>{setting.name}</ListItemText>
-                  </MenuItem>
+            <Box sx={{ display: { xs: "none", sm: "flex" }, alignItems:'center' }}>
+              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                {navItems.map((page) => (
+                  <Button key={page} sx={{ my: 2, color: "#264888" , fontWeight:'bold'}}>
+                    {page}
+                  </Button>
                 ))}
-                <Divider />
-                <MenuItem>
-                  <ListItemIcon>
-                    <LogoutIcon fontSize="small" />
-                  </ListItemIcon>
-                  <ListItemText>se déconnecter</ListItemText>
-                </MenuItem>
-              </Menu>
+              </Box>
+              <Box sx={{ flexGrow: 0 }}>
+                <Tooltip title="Open settings">
+                  <Tooltip title="Open settings">
+                    <IconButton
+                      onClick={handleOpenUserMenu}
+                      sx={{ p: 0, marginLeft: 2 }}
+                    >
+                      <Avatar alt="Remy Sharp" src={user} />
+                    </IconButton>
+                  </Tooltip>
+                </Tooltip>
+                <Menu
+                  sx={{ mt: "45px" }}
+                  id="menu-appbar"
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {settings.map((setting) => (
+                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                      <ListItemIcon>
+                        <setting.componentIcon fontSize="small" />
+                      </ListItemIcon>
+                      <ListItemText>{setting.name}</ListItemText>
+                    </MenuItem>
+                  ))}
+                  <Divider />
+                  <MenuItem>
+                    <ListItemIcon>
+                      <LogoutIcon fontSize="small" />
+                    </ListItemIcon>
+                    <ListItemText>se déconnecter</ListItemText>
+                  </MenuItem>
+                </Menu>
+              </Box>
             </Box>
           </Toolbar>
         </AppBar>
@@ -168,7 +163,7 @@ function CustomerNavBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, 
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
