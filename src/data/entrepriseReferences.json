@@ -1,0 +1,27 @@
+[
+    {
+      "_id": "60f8c31f9bcf3c001c6d6f9b",
+      "title": "Solar Home Solutions",
+      "describtion": "Partnered to install solar panels on residential properties.",
+      "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+    },
+    {
+      "_id": "60f8c31f9bcf3c001c6d6f9c",
+      "title": "Solar Commercial Solutions",
+      "describtion": "Partnered to install solar panels on commercial properties.",
+      "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+    },
+    {
+      "_id": "60f8c31f9bcf3c001c6d6f9d",
+      "title": "Solar Maintenance Solutions",
+      "describtion": "Partnered for maintenance of solar panel systems.",
+      "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+    },
+    {
+      "_id": "60f8c31f9bcf3c001c6d6f9e",
+      "title": "Solar Large Scale Solutions",
+      "describtion": "Partnered for large scale solar projects.",
+      "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+    }
+  ]
+  

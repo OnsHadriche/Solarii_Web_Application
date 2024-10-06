@@ -1,0 +1,17 @@
+[
+    {
+      "_id": "603c8fcfc25e5b001d3e9d05",
+      "title": "Bachelor's Degree in Renewable Energy",
+      "describtion": "Studied renewable energy technologies with a focus on solar power.",
+      "startDate": "2015-09-01T08:00:00Z",
+      "endDate": "2019-06-01T08:00:00Z"
+    },
+    {
+      "_id": "603c8fcfc25e5b001d3e9d06",
+      "title": "Diploma in Solar Energy Engineering",
+      "describtion": "Completed a specialized program in solar energy systems.",
+      "startDate": "2020-01-01T08:00:00Z",
+      "endDate": "2021-12-01T08:00:00Z"
+    }
+  ]
+  
