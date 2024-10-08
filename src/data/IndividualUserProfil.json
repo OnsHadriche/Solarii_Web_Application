@@ -1,0 +1,69 @@
+[
+    {
+      "_id": "604c8fcfc25e5b001d3e9d07",
+      "photo": "https://example.com/photo.jpg",
+      "poste": "Solar Engineer",
+      "academicExperience": [
+        {
+          "_id": "603c8fcfc25e5b001d3e9d05",
+          "title": "Bachelor's Degree in Renewable Energy",
+          "describtion": "Studied renewable energy technologies with a focus on solar power.",
+          "startDate": "2015-09-01T08:00:00Z",
+          "endDate": "2019-06-01T08:00:00Z"
+        }
+      ],
+      "profesionnalExperience": [
+        {
+          "_id": "602c8fcfc25e5b001d3e9d01",
+          "title": "Solar Engineer",
+          "describtion": "Worked on solar energy installation projects for residential properties.",
+          "startDate": "2020-01-01T08:00:00Z",
+          "endDate": "2021-01-01T08:00:00Z"
+        }
+      ],
+      "user": {
+        "_id": "601c8fcfc25e5b001d3e9cfc",
+        "name": "John Doe",
+        "address": "123 Solar Street",
+        "phone": "+1-555-555-5551",
+        "type": "Employé",
+        "email": "johndoe@example.com",
+        "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+        "isVerified": true
+      }
+    },
+    {
+      "_id": "604c8fcfc25e5b001d3e9d08",
+      "photo": "https://example.com/photo2.jpg",
+      "poste": "Solar Panel Technician",
+      "academicExperience": [
+        {
+          "_id": "603c8fcfc25e5b001d3e9d06",
+          "title": "Diploma in Solar Energy Engineering",
+          "describtion": "Completed a specialized program in solar energy systems.",
+          "startDate": "2020-01-01T08:00:00Z",
+          "endDate": "2021-12-01T08:00:00Z"
+        }
+      ],
+      "profesionnalExperience": [
+        {
+          "_id": "602c8fcfc25e5b001d3e9d02",
+          "title": "Solar Panel Technician",
+          "describtion": "Managed maintenance and repairs of commercial solar panel systems.",
+          "startDate": "2019-06-01T08:00:00Z",
+          "endDate": "2020-06-01T08:00:00Z"
+        }
+      ],
+      "user": {
+        "_id": "601c8fcfc25e5b001d3e9cfd",
+        "name": "Jane Smith",
+        "address": "456 Solar Blvd",
+        "phone": "+1-555-555-5552",
+        "type": "Employé",
+        "email": "janesmith@example.com",
+        "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+        "isVerified": true
+      }
+    }
+  ]
+  

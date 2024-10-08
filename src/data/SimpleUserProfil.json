@@ -1,0 +1,33 @@
+[
+    {
+      "user": {
+        "name": "Jane Doe",
+        "address": "123 Main Street",
+        "phone": "+1-555-555-1234",
+        "type": "Interessé par le domaine",
+        "email": "janedoe@example.com",
+        "password": "hashed_password_1",
+        "isVerified": true
+      },
+      "hasInstallation": true,
+      "InstallationCapacity": "5 kW",
+      "InstallationDate": "2023-05-01T00:00:00Z",
+      "lastCleaningDate": "2023-09-01T00:00:00Z"
+    },
+    {
+      "user": {
+        "name": "John Smith",
+        "address": "456 Elm Street",
+        "phone": "+1-555-555-5678",
+        "type": "Interessé par le domaine",
+        "email": "johnsmith@example.com",
+        "password": "hashed_password_2",
+        "isVerified": false
+      },
+      "hasInstallation": false,
+      "InstallationCapacity": null,
+      "InstallationDate": null,
+      "lastCleaningDate": null
+    }
+  ]
+  
