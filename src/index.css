@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
+  --white-color:#ffff;
   --primary-color: #ad8b73;
   --secondary-color: #112d4e;
-  --lightBleu-color: #dbe2ef;
-  --lightGray-color: #e4e4e4;
+  --lightBleu-color: #e1f5fe;
+  --lightBleuGray-color:#eceff1;
+  --lightGray-color: #fafafa;
   --gray-color: #6b7688;
   --black-color: #030303;
   --bleu-color: #3f72af;
