@@ -1,4 +1,3 @@
-import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -14,22 +13,25 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import HideOnScroll from "../HideOnScroller";
+import "../../styles/Navbars.css";
 import {
   Avatar,
   ListItemIcon,
   Menu,
   MenuItem,
-  styled,
+  StyledEngineProvider,
   Tooltip,
 } from "@mui/material";
-import logo from "../../assets/images/logo.png";
+
 import user from "../../assets/images/avatar.jpg";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import LogoutIcon from "@mui/icons-material/Logout";
+import Logo from "../Logo";
+import useMenuToggle from "../../hooks/useMenuToggel";
 const drawerWidth = 240;
-const navItems = ["Accueil", "Services", "Marketpalce", "Formation", "Contact"];
+const navItems = ["Accueil", "Services", "Produit", "Formation", "Contact"];
 const settings = [
   {
     componentIcon: PersonIcon,
@@ -44,26 +46,16 @@ const settings = [
     name: "Avancement",
   },
 ];
-const Logo = styled("img")(() => ({
-  width: "12rem",
-  minWidth: "4rem",
-}));
 
 function CustomerNavBar(props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+  const {
+    mobileOpen,
+    anchorElUser,
+    handleOpenUserMenu,
+    handleCloseUserMenu,
+    handleDrawerToggle,
+  } = useMenuToggle();
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -85,30 +77,33 @@ function CustomerNavBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ flexGrow: 1 }} color="primary">
-      <HideOnScroll {...props}>
-        <AppBar component="nav">
-          <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Logo src={logo} sx={{ display: { xs: "none", sm: "block" } }} />
+    <StyledEngineProvider injectFirst>
+      <Box sx={{ flexGrow: 1 }}>
+        <HideOnScroll {...props}>
+          <AppBar component="nav" className="navbar-customer">
+            <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { md: "none" } }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Logo sx={{ display: { sm: "none", md: "block" } }} />
 
-            <Box sx={{ display: { xs: "none", sm: "flex" }, alignItems:'center' }}>
-              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
                 {navItems.map((page) => (
-                  <Button key={page} sx={{ my: 2, color: "#264888" , fontWeight:'bold'}}>
+                  <Button
+                    key={page}
+                    sx={{ my: 2, color: "#264888", fontWeight: "bold" }}
+                  >
                     {page}
                   </Button>
                 ))}
               </Box>
-              <Box sx={{ flexGrow: 0 }}>
+              <Box sx={{ flexGrow: 0, display: { xs: "block" } }}>
                 <Tooltip title="Open settings">
                   <Tooltip title="Open settings">
                     <IconButton
@@ -152,31 +147,31 @@ function CustomerNavBar(props) {
                   </MenuItem>
                 </Menu>
               </Box>
-            </Box>
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-    </Box>
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
+        <nav>
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true,
+            }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </nav>
+      </Box>
+    </StyledEngineProvider>
   );
 }
 

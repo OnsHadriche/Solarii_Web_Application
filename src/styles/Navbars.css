@@ -1,0 +1,8 @@
+.navbar-custom {
+  height: 6rem;
+  background-color: var(--white-color);
+}
+.navbar-custom__links{
+ padding-bottom: 1rem;
+    border-bottom: 1px solid #f4f4f4;
+}
