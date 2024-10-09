@@ -4,6 +4,9 @@ import App from "./App.jsx";
 import "./index.css";
 import { createTheme } from "@mui/material/styles";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import 'swiper/swiper-bundle.css';
+
+
 const theme = createTheme({
   palette: {
     primary: {
