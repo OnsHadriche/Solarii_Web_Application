@@ -1,0 +1,163 @@
+[
+    {
+      "_id": "60fjndjn5582xck6f99",
+      "webSite": "https://photovoltaique-smallcompany1.com",
+      "registrationNumber": "REG000001",
+      "createdAt": "2022-08-15T08:00:00Z",
+      "NbEmployes": 15,
+      "size": "Small",
+      "describtion": "A small photovoltaic installation company specializing in residential solar solutions.",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgT1Uw-8Le4jQDQS8xBK12XOwOKGWAqJFHaw&s",
+      "ISOCertification": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f99",
+          "name": "ISO 9001",
+          "describtion": "Quality management certification for photovoltaic systems.",
+          "photo": "https://www.iso.org/files/live/sites/isoorg/files/archive/img/ISO9001.jpg",
+          "issuedBy": "ISO Organization",
+          "issueDate": "2020-01-15T08:00:00Z",
+          "expirationDate": "2025-01-15T08:00:00Z"
+        }
+      ],
+      "entrepriseReference": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f9b",
+          "title": "Solar Home Solutions",
+          "describtion": "Partnered to install solar panels on residential properties.",
+          "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+        }
+      ],
+      "user": {
+        "_id": "60f8c31f9bcf3c001c6d6f9d",
+        "username": "johnDoeEntrepreneur1",
+        "email": "john.doe1@example.com",
+        "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+        "phoneNumber": "+1-555-555-5555",
+        "type": "Entreprise d'installation photovoltaïque",
+        "createdAt": "2022-07-01T12:00:00Z",
+        "lastLogin": "2023-09-15T10:00:00Z",
+        "status": "active"
+      }
+    },
+    {
+      "_id": "60fjlc857cd65vf529",
+      "webSite": "https://photovoltaique-smallcompany2.com",
+      "registrationNumber": "REG000002",
+      "createdAt": "2022-08-16T08:00:00Z",
+      "NbEmployes": 20,
+      "size": "Small",
+      "describtion": "A small photovoltaic installation company specializing in commercial solar solutions.",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgT1Uw-8Le4jQDQS8xBK12XOwOKGWAqJFHaw&s",
+      "ISOCertification": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f98",
+          "name": "ISO 9001",
+          "describtion": "Quality management certification for photovoltaic systems.",
+          "photo": "https://www.iso.org/files/live/sites/isoorg/files/archive/img/ISO9001.jpg",
+          "issuedBy": "ISO Organization",
+          "issueDate": "2021-01-15T08:00:00Z",
+          "expirationDate": "2026-01-15T08:00:00Z"
+        }
+      ],
+      "entrepriseReference": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f9c",
+          "title": "Solar Commercial Solutions",
+          "describtion": "Partnered to install solar panels on commercial properties.",
+          "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+        }
+      ],
+      "user": {
+        "_id": "60f8c31f9bcf3c001c6d6f9e",
+        "username": "johnDoeEntrepreneur2",
+        "email": "john.doe2@example.com",
+        "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+        "phoneNumber": "+1-555-555-5556",
+        "type": "Entreprise d'installation photovoltaïque",
+        "createdAt": "2022-07-02T12:00:00Z",
+        "lastLogin": "2023-09-16T10:00:00Z",
+        "status": "active"
+      }
+    },
+    {
+      "_id": "kc85cf8zs58fcfl5c1zz5",
+      "webSite": "https://photovoltaique-smallcompany3.com",
+      "registrationNumber": "REG000003",
+      "createdAt": "2022-08-17T08:00:00Z",
+      "NbEmployes": 25,
+      "size": "Small",
+      "describtion": "A small photovoltaic installation company specializing in solar panel maintenance.",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgT1Uw-8Le4jQDQS8xBK12XOwOKGWAqJFHaw&s",
+      "ISOCertification": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f97",
+          "name": "ISO 9001",
+          "describtion": "Quality management certification for photovoltaic systems.",
+          "photo": "https://www.iso.org/files/live/sites/isoorg/files/archive/img/ISO9001.jpg",
+          "issuedBy": "ISO Organization",
+          "issueDate": "2021-02-15T08:00:00Z",
+          "expirationDate": "2026-02-15T08:00:00Z"
+        }
+      ],
+      "entrepriseReference": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f9d",
+          "title": "Solar Maintenance Solutions",
+          "describtion": "Partnered for maintenance of solar panel systems.",
+          "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+        }
+      ],
+      "user": {
+        "_id": "60f8c31f9bcf3c001c6d6f9f",
+        "username": "johnDoeEntrepreneur3",
+        "email": "john.doe3@example.com",
+        "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+        "phoneNumber": "+1-555-555-5557",
+        "type": "Entreprise d'installation photovoltaïque",
+        "createdAt": "2022-07-03T12:00:00Z",
+        "lastLogin": "2023-09-17T10:00:00Z",
+        "status": "active"
+      }
+    },
+    {
+      "_id": "jdzpi854czkcoz23678",
+      "webSite": "https://photovoltaique-bigcompany1.com",
+      "registrationNumber": "REG000004",
+      "createdAt": "2022-08-18T08:00:00Z",
+      "NbEmployes": 100,
+      "size": "Big",
+      "describtion": "A large company specializing in photovoltaic installations for residential and commercial projects.",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgT1Uw-8Le4jQDQS8xBK12XOwOKGWAqJFHaw&s",
+      "ISOCertification": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f96",
+          "name": "ISO 14001",
+          "describtion": "Environmental management certification for sustainable energy.",
+          "photo": "https://www.iso.org/files/live/sites/isoorg/files/archive/img/ISO14001.jpg",
+          "issuedBy": "ISO Organization",
+          "issueDate": "2019-05-10T08:00:00Z",
+          "expirationDate": "2024-05-10T08:00:00Z"
+        }
+      ],
+      "entrepriseReference": [
+        {
+          "_id": "60f8c31f9bcf3c001c6d6f9e",
+          "title": "Solar Large Scale Solutions",
+          "describtion": "Partnered for large scale solar projects.",
+          "photo": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41561-023-01304-1/MediaObjects/41561_2023_1304_Fig1_HTML.png"
+        }
+      ],
+      "user": {
+        "_id": "60f8c31f9bcf3c001c6d6f9f",
+        "username": "johnDoeBigCompany1",
+        "email": "john.doe4@example.com",
+        "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+        "phoneNumber": "+1-555-555-5558",
+        "type": "Entreprise d'installation photovoltaïque",
+        "createdAt": "2022-07-04T12:00:00Z",
+        "lastLogin": "2023-09-18T10:00:00Z",
+        "status": "active"
+      }
+    }
+  ]
+  

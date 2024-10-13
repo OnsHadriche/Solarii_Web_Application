@@ -1,0 +1,85 @@
+[
+  {
+    "_id": "60f8c31f9bcf3c001c6d6f9d",
+    "username": "johnDoeEntrepreneur1",
+    "email": "john.doe1@example.com",
+    "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+    "phoneNumber": "+1-555-555-5555",
+    "type": "Entreprise d'installation photovoltaïque",
+    "createdAt": "2022-07-01T12:00:00Z",
+    "lastLogin": "2023-09-15T10:00:00Z",
+    "status": "active"
+  },
+  {
+    "_id": "60f8c31f9bcf3c001c6d6f9e",
+    "username": "johnDoeEntrepreneur2",
+    "email": "john.doe2@example.com",
+    "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+    "phoneNumber": "+1-555-555-5556",
+    "type": "Entreprise d'installation photovoltaïque",
+    "createdAt": "2022-07-02T12:00:00Z",
+    "lastLogin": "2023-09-16T10:00:00Z",
+    "status": "active"
+  },
+  {
+    "_id": "60f8c31f9bcf3c001c6d6f9f",
+    "username": "johnDoeEntrepreneur3",
+    "email": "john.doe3@example.com",
+    "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+    "phoneNumber": "+1-555-555-5557",
+    "type": "Entreprise d'installation photovoltaïque",
+    "createdAt": "2022-07-03T12:00:00Z",
+    "lastLogin": "2023-09-17T10:00:00Z",
+    "status": "active"
+  },
+  {
+    "_id": "60f8c31f9bcf3c001c6d6f9f",
+    "username": "johnDoeBigCompany1",
+    "email": "john.doe4@example.com",
+    "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+    "phoneNumber": "+1-555-555-5558",
+    "type": "Entreprise d'installation photovoltaïque",
+    "createdAt": "2022-07-04T12:00:00Z",
+    "lastLogin": "2023-09-18T10:00:00Z",
+    "status": "active"
+  },
+
+  {
+    "_id": "601c8fcfc25e5b001d3e9cfc",
+    "name": "John Doe",
+    "address": "123 Solar Street",
+    "phone": "+1-555-555-5551",
+    "type": "Employé",
+    "email": "johndoe@example.com",
+    "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+    "isVerified": true
+  },
+  {
+    "_id": "601c8fcfc25e5b001d3e9cfd",
+    "name": "Jane Smith",
+    "address": "456 Solar Blvd",
+    "phone": "+1-555-555-5552",
+    "type": "Employé",
+    "email": "janesmith@example.com",
+    "password": "$2b$10$e.bV2bkj4kbQX2kdXcpiXOTgX3z7.PmTI5.i5WfUZxoY9GA7eJCGm",
+    "isVerified": true
+  },
+  {
+    "name": "Jane Doe",
+    "address": "123 Main Street",
+    "phone": "+1-555-555-1234",
+    "type": "Interessé par le domaine",
+    "email": "janedoe@example.com",
+    "password": "hashed_password_1",
+    "isVerified": true
+  },
+  {
+    "name": "John Smith",
+    "address": "456 Elm Street",
+    "phone": "+1-555-555-5678",
+    "type": "Interessé par le domaine",
+    "email": "johnsmith@example.com",
+    "password": "hashed_password_2",
+    "isVerified": false
+  } 
+]

@@ -1,0 +1,17 @@
+[
+    {
+      "_id": "602c8fcfc25e5b001d3e9d01",
+      "title": "Solar Engineer",
+      "describtion": "Worked on solar energy installation projects for residential properties.",
+      "startDate": "2020-01-01T08:00:00Z",
+      "endDate": "2021-01-01T08:00:00Z"
+    },
+    {
+      "_id": "602c8fcfc25e5b001d3e9d02",
+      "title": "Solar Panel Technician",
+      "describtion": "Managed maintenance and repairs of commercial solar panel systems.",
+      "startDate": "2019-06-01T08:00:00Z",
+      "endDate": "2020-06-01T08:00:00Z"
+    }
+  ]
+  
