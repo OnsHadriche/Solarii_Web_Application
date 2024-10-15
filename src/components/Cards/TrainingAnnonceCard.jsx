@@ -96,7 +96,7 @@ const TrainingAnnonceCard = ({trainingInfo}) => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: {sm:'row',md:"column"},
           justifyContent: "space-evenly",
           alignItems: "center",
         }}
