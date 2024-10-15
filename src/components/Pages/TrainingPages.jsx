@@ -1,4 +1,4 @@
-import { Box, Pagination, Stack } from "@mui/material";
+import { Box, Pagination, Stack, Typography } from "@mui/material";
 import TrainingAnnonceCard from "../Cards/TrainingAnnonceCard";
 import { useState } from "react";
 
@@ -75,6 +75,21 @@ const TrainingPages = () => {
     indexOfLastItem
   );
   return (
+    <>
+    <Typography
+          component="div"
+          sx={{
+            textAlign: "left",
+            fontFamily: "Plus Jakarta Sans",
+            color: "#486284FF",
+            fontSize: "32px",
+            fontWeight: 700,
+            lineHeight: 1.5,
+            letterSpacing: -2,
+          }}
+        >
+            {allAvailableTraining.length} Formations trouvées
+        </Typography>
     <Box
       sx={{
         display: "flex",
@@ -100,11 +115,12 @@ const TrainingPages = () => {
           gap: "10px",
         }}
       >
-        {currentData.map(item => (
-          <TrainingAnnonceCard trainingInfo={item} />
+        {currentData.map((item, index) => (
+          <TrainingAnnonceCard key={index} trainingInfo={item} />
         ))}
       </Box>
     </Box>
+    </>
   );
 };
 
