@@ -28,6 +28,7 @@ const AnnoncementCard = ({
         paddingRight: "17px",
         paddingTop: "26px",
         paddingBottom: "28px",
+        maxWidth:{sm: "500px", md:"700px"}
       }}
     >
       <CardActionArea
