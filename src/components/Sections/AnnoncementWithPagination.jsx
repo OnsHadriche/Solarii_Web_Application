@@ -72,6 +72,16 @@ const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
 };
 AnnoncementWithPagination.propTypes = {
   itemsPerPage: PropTypes.number.isRequired,
-  data: PropTypes.object.itemsPerPage,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      startDate: PropTypes.string.isRequired,
+      society: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+      }),
+    })
+  ),
 };
 export default AnnoncementWithPagination;

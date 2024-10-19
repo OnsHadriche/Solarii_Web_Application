@@ -1,4 +1,4 @@
-import AnnoncementWithPagination from "../Sections/AnnoncementWithPagination";
+import AnnoncementWithPagination from "../components/Sections/AnnoncementWithPagination";
 
 const TrainingPages = () => {
   const allAvailableTraining = [
