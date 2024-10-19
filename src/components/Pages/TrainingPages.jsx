@@ -1,6 +1,7 @@
 import { Box, Pagination, Stack, Typography } from "@mui/material";
 import TrainingAnnonceCard from "../Cards/TrainingAnnonceCard";
 import { useState } from "react";
+import AnnoncementWithPagination from "../Sections/AnnoncementWithPagination";
 
 const TrainingPages = () => {
   const allAvailableTraining = [
@@ -9,8 +10,8 @@ const TrainingPages = () => {
       description:
         "Familirization avec les energies renouvelables et les bases des installations PV",
       startDate: "12-12-2024",
-      center: {
-        name: "Elite center",
+      society: {
+        name: "Elite society",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeNwvgzi46y7suduGgb6yfoy5sxfZlb1Zhw&s",
       },
@@ -20,7 +21,7 @@ const TrainingPages = () => {
       description:
         "Familirization avec les energies renouvelables et les bases des installations PV",
       startDate: "12-12-2024",
-      center: {
+      society: {
         name: "Elite center",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeNwvgzi46y7suduGgb6yfoy5sxfZlb1Zhw&s",
@@ -31,7 +32,7 @@ const TrainingPages = () => {
       description:
         "Familirization avec les energies renouvelables et les bases des installations PV",
       startDate: "12-12-2024",
-      center: {
+      society: {
         name: "Elite center",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeNwvgzi46y7suduGgb6yfoy5sxfZlb1Zhw&s",
@@ -42,7 +43,7 @@ const TrainingPages = () => {
       description:
         "Familirization avec les energies renouvelables et les bases des installations PV",
       startDate: "12-12-2024",
-      center: {
+      society: {
         name: "Elite center",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeNwvgzi46y7suduGgb6yfoy5sxfZlb1Zhw&s",
@@ -53,73 +54,17 @@ const TrainingPages = () => {
       description:
         "Familirization avec les energies renouvelables et les bases des installations PV",
       startDate: "12-12-2024",
-      center: {
+      society: {
         name: "Elite center",
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeNwvgzi46y7suduGgb6yfoy5sxfZlb1Zhw&s",
       },
     },
   ];
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
-  const totalPages = Math.ceil(allAvailableTraining.length / itemsPerPage);
-
-  const handlePageChange = (event, value) => {
-    setCurrentPage(value);
-  };
-
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentData = allAvailableTraining.slice(
-    indexOfFirstItem,
-    indexOfLastItem
-  );
+  
   return (
     <>
-    <Typography
-          component="div"
-          sx={{
-            textAlign: "left",
-            fontFamily: "Plus Jakarta Sans",
-            color: "#486284FF",
-            fontSize: "32px",
-            fontWeight: 700,
-            lineHeight: 1.5,
-            letterSpacing: -2,
-          }}
-        >
-            {allAvailableTraining.length} Formations trouvées
-        </Typography>
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "10px",
-      }}
-    >
-      <Stack spacing={2}>
-        <Pagination
-          count={totalPages}
-          page={currentPage}
-          onChange={handlePageChange}
-          variant="outlined"
-          shape="rounded"
-        />
-      </Stack>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "10px",
-        }}
-      >
-        {currentData.map((item, index) => (
-          <TrainingAnnonceCard key={index} trainingInfo={item} />
-        ))}
-      </Box>
-    </Box>
+      <AnnoncementWithPagination itemsPerPage={3} data={allAvailableTraining}/>
     </>
   );
 };

@@ -10,8 +10,8 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-const TrainingAnnonceCard = ({trainingInfo}) => {
-  console.log(trainingInfo)
+const TrainingAnnonceCard = ({image, title, description, SocietyName, startDate}) => {
+  
   return (
     <Card
       sx={{
@@ -33,7 +33,7 @@ const TrainingAnnonceCard = ({trainingInfo}) => {
           component="img"
           width="100%"
           height="100%"
-          image={trainingInfo.center.image}
+          image={image}
           // image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeNwvgzi46y7suduGgb6yfoy5sxfZlb1Zhw&s"
           alt="Elite center"
         />
@@ -58,7 +58,7 @@ const TrainingAnnonceCard = ({trainingInfo}) => {
             letterSpacing: 0,
           }}
         >
-          {trainingInfo.title}
+          {title}
         </Typography>
         <Typography
           component="div"
@@ -73,7 +73,7 @@ const TrainingAnnonceCard = ({trainingInfo}) => {
             wordWrap: "break-word",
           }}
         >
-          {trainingInfo.description}
+          {description}
         </Typography>
         <Box sx={{ display: "flex", alignItems: "baseline" }}>
           <PinDropIcon
@@ -89,7 +89,7 @@ const TrainingAnnonceCard = ({trainingInfo}) => {
               letterSpacing: 0,
             }}
           >
-            {trainingInfo.center.name}
+            {SocietyName}
           </Typography>
         </Box>
       </Box>
@@ -113,7 +113,7 @@ const TrainingAnnonceCard = ({trainingInfo}) => {
               textAlign: 'left',            
             }}
           >
-            {trainingInfo.startDate}
+            {startDate}
           </Typography>
           <CalendarMonthIcon sx={{ width: "24px", height: "24px", color: "#486284FF", }} />
         </Box>
