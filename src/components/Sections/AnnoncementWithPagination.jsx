@@ -1,5 +1,5 @@
 import { Box, Pagination, Stack, Typography } from "@mui/material";
-import TrainingAnnonceCard from "../Cards/TrainingAnnonceCard";
+import AnnoncementCard from "../Cards/AnnoncementCard";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
@@ -56,7 +56,7 @@ const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
           }}
         >
           {currentData.map((item, index) => (
-            <TrainingAnnonceCard
+            <AnnoncementCard
               key={index}
               image={item.society.image}
               title={item.title}

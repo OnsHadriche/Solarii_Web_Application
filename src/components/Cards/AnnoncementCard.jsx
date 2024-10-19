@@ -9,7 +9,7 @@ import {
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PropTypes from "prop-types";
-const TrainingAnnonceCard = ({
+const AnnoncementCard = ({
   image,
   title,
   description,
@@ -151,11 +151,11 @@ const TrainingAnnonceCard = ({
     </Card>
   );
 };
-TrainingAnnonceCard.propTypes = {
+AnnoncementCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   SocietyName: PropTypes.string.isRequired,
   startDate: PropTypes.string.isRequired,
 };
-export default TrainingAnnonceCard;
+export default AnnoncementCard;
