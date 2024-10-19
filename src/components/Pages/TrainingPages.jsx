@@ -1,6 +1,3 @@
-import { Box, Pagination, Stack, Typography } from "@mui/material";
-import TrainingAnnonceCard from "../Cards/TrainingAnnonceCard";
-import { useState } from "react";
 import AnnoncementWithPagination from "../Sections/AnnoncementWithPagination";
 
 const TrainingPages = () => {
@@ -61,10 +58,10 @@ const TrainingPages = () => {
       },
     },
   ];
-  
+
   return (
     <>
-      <AnnoncementWithPagination itemsPerPage={3} data={allAvailableTraining}/>
+      <AnnoncementWithPagination itemsPerPage={3} data={allAvailableTraining} />
     </>
   );
 };

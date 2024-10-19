@@ -6,12 +6,16 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PinDropIcon from "@mui/icons-material/PinDrop";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-
-const TrainingAnnonceCard = ({image, title, description, SocietyName, startDate}) => {
-  
+import PropTypes from "prop-types";
+const TrainingAnnonceCard = ({
+  image,
+  title,
+  description,
+  SocietyName,
+  startDate,
+}) => {
   return (
     <Card
       sx={{
@@ -96,12 +100,18 @@ const TrainingAnnonceCard = ({image, title, description, SocietyName, startDate}
       <Box
         sx={{
           display: "flex",
-          flexDirection: {sm:'row',md:"column"},
+          flexDirection: { sm: "row", md: "column" },
           justifyContent: "space-evenly",
           alignItems: "center",
         }}
       >
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems:'center' }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Typography
             component="span"
             sx={{
@@ -110,12 +120,14 @@ const TrainingAnnonceCard = ({image, title, description, SocietyName, startDate}
               fontSize: "12px",
               lineHeight: 1,
               letterSpacing: 0,
-              textAlign: 'left',            
+              textAlign: "left",
             }}
           >
             {startDate}
           </Typography>
-          <CalendarMonthIcon sx={{ width: "24px", height: "24px", color: "#486284FF", }} />
+          <CalendarMonthIcon
+            sx={{ width: "24px", height: "24px", color: "#486284FF" }}
+          />
         </Box>
         <Button
           sx={{
@@ -127,9 +139,9 @@ const TrainingAnnonceCard = ({image, title, description, SocietyName, startDate}
             lineHeight: 1,
             letterSpacing: 0,
             textAlign: "center",
-            borderRadius: '8px',
-            backgroundColor:'#F5F5F5FF',
-            textTransform: 'none',
+            borderRadius: "8px",
+            backgroundColor: "#F5F5F5FF",
+            textTransform: "none",
           }}
         >
           Voir plus
@@ -138,5 +150,11 @@ const TrainingAnnonceCard = ({image, title, description, SocietyName, startDate}
     </Card>
   );
 };
-
+TrainingAnnonceCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  SocietyName: PropTypes.string.isRequired,
+  startDate: PropTypes.string.isRequired,
+};
 export default TrainingAnnonceCard;

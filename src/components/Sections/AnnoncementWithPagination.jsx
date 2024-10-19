@@ -1,8 +1,9 @@
 import { Box, Pagination, Stack, Typography } from "@mui/material";
 import TrainingAnnonceCard from "../Cards/TrainingAnnonceCard";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-const AnnoncementWithPagination = ({itemsPerPage, data}) => {
+const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
@@ -69,5 +70,8 @@ const AnnoncementWithPagination = ({itemsPerPage, data}) => {
     </>
   );
 };
-
+AnnoncementWithPagination.propTypes = {
+  itemsPerPage: PropTypes.number.isRequired,
+  data: PropTypes.object.itemsPerPage,
+};
 export default AnnoncementWithPagination;
