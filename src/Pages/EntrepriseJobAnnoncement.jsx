@@ -16,7 +16,7 @@ const EntrepriseJobAnnoncement = () => {
         {
           title: "Ingénieur Energie renouvelable",
           description:
-            "green power cherche un ingénieur d'étude pour des grandes installations PV avec un salaire motivant",
+            "green power cherche un ingénieur d'étude pour des grandes installations PV avec un salaire motivan green power cherche un ingénieur d'étude pour des grandes installations PV avec un salaire motivant",
           startDate: "12-12-2024",
           society: {
             name: "green power",
@@ -27,7 +27,7 @@ const EntrepriseJobAnnoncement = () => {
         {
           title: "Electricien",
           description:
-            "Solarii a besoin d'un ouvreier pour la maintenance et le nettoyage des panneaux",
+            "Bonjour, =====================================================================================================...",
           startDate: "12-12-2024",
           society: {
             name: "Solari",

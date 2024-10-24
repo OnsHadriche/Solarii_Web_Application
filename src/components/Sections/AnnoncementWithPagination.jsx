@@ -1,7 +1,7 @@
 import { Box, Pagination, Stack, Typography } from "@mui/material";
-import AnnoncementCard from "../Cards/AnnoncementCard";
 import { useState } from "react";
 import PropTypes from "prop-types";
+import AnnoncementCardComponent from "./AnnoncementCardComponenet";
 
 const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,20 +22,23 @@ const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
           textAlign: "left",
           fontFamily: "Plus Jakarta Sans",
           color: "#486284FF",
-          fontSize: "32px",
+          fontSize: "16px",
           fontWeight: 700,
           lineHeight: 1.5,
-          letterSpacing: -2,
+          letterSpacing: "-0.32px",
         }}
       >
-        {data.length} Formations trouvées
+        les Offre d’emploi
       </Typography>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "10px",
+          gap: "20px",
+          backgroundColor:"#F7FAFC",
+          borderRadius:"30px",
+         padding:"68px 46px 150px   "
         }}
       >
         <Stack spacing={2}>
@@ -52,11 +55,11 @@ const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "10px",
+            gap: "63px",
           }}
         >
           {currentData.map((item, index) => (
-            <AnnoncementCard
+            <AnnoncementCardComponent
               key={index}
               image={item.society.image}
               title={item.title}
@@ -66,6 +69,15 @@ const AnnoncementWithPagination = ({ itemsPerPage, data }) => {
             />
           ))}
         </Box>
+        <Stack spacing={2}>
+          <Pagination
+            count={totalPages}
+            page={currentPage}
+            onChange={handlePageChange}
+            variant="outlined"
+            shape="rounded"
+          />
+        </Stack>
       </Box>
     </>
   );
