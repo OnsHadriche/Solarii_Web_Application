@@ -1,4 +1,5 @@
-import AnnoncementWithPagination from "../components/Sections/AnnoncementWithPagination";
+import AnnoncementWithPagination from "./AnnoncementWithPagination";
+
 
 const EntrepriseJobAnnoncement = () => {
     const allAvailableJobs = [

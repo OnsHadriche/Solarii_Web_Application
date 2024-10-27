@@ -1,4 +1,4 @@
-import AnnoncementWithPagination from "../components/Sections/AnnoncementWithPagination";
+import AnnoncementWithPagination from "../Features/SolariiJob/AnnoncementWithPagination";
 
 const TrainingPages = () => {
   const allAvailableTraining = [

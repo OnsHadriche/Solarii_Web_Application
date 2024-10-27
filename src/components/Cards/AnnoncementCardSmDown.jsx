@@ -3,6 +3,7 @@ import PinDropIcon from "@mui/icons-material/PinDrop";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import PropTypes from "prop-types";
+import SeeDetailsButton from "../Common/SeeDetailsButton";
 
 const AnnoncementCardSmDown = ({
   title,
@@ -61,7 +62,7 @@ const AnnoncementCardSmDown = ({
           <Typography
             component="span"
             sx={{
-              fontFamily: "Inter",
+              fontFamily: "Inter, sans-serif",
               color: "#486284FF",
               fontSize: "12px",
               lineHeight: 1,
@@ -75,7 +76,7 @@ const AnnoncementCardSmDown = ({
           component="div"
           sx={{
             textAlign: "left",
-            fontFamily: "Inter",
+            fontFamily: "Inter, sans-serif",
             color: "#00000091",
             fontSize: "14px",
             lineHeight: 1.4,
@@ -106,7 +107,7 @@ const AnnoncementCardSmDown = ({
             <Typography
               component="span"
               sx={{
-                fontFamily: "Inter",
+                fontFamily: "Inter, sans-serif",
                 color: "#000000FF",
                 fontSize: "14px",
                 lineHeight: 1.4,
@@ -123,7 +124,7 @@ const AnnoncementCardSmDown = ({
             <Typography
               component="span"
               sx={{
-                fontFamily: "Inter",
+                fontFamily: "Inter, sans-serif",
                 color: "#000000FF",
                 fontSize: "14px",
                 lineHeight: 1.4,
@@ -141,7 +142,7 @@ const AnnoncementCardSmDown = ({
           flexDirection: "row",
           justifyContent: "space-evenly",
           alignItems: "center",
-          fontFamily: "Inter",
+          fontFamily: "Inter, sans-serif",
           color: "#486284FF",
           fontSize: "14px",
           lineHeight: 1,
@@ -150,16 +151,7 @@ const AnnoncementCardSmDown = ({
           paddingRight: "15px",
         }}
       >
-        <Box
-          sx={{
-            width: "24px",
-            height: "24px",
-            borderRadius: "8px",
-            border: "1px solid",
-          }}
-        >
-          <KeyboardArrowRightIcon />
-        </Box>
+    <SeeDetailsButton/>
       </Box>
     </Card>
   );

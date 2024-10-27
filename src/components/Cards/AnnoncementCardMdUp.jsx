@@ -8,6 +8,7 @@ import {
   import ApartmentIcon from "@mui/icons-material/Apartment";
   import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
   import PropTypes from "prop-types";
+import SeeDetailsButton from "../Common/SeeDetailsButton";
 
 const AnnoncementCardMdUp = ({
     image,
@@ -28,7 +29,7 @@ const AnnoncementCardMdUp = ({
             height: "216px",
             borderRadius: "30px",
             boxShadow: "0px 4px 4px 0px #00000040",
-            width: { md: "780px", lg: "1000px" },
+            maxWidth: { md: "700px", lg: "1100px" },
           }}
         >
           <CardActionArea
@@ -70,7 +71,7 @@ const AnnoncementCardMdUp = ({
                 component="div"
                 sx={{
                   fontFamily: "Roboto",
-                  color: "#486284FF",
+                  color: "#3E4FA8",
                   fontSize: "20px",
                   fontWeight: 700,
                   lineHeight: "40px",
@@ -82,8 +83,8 @@ const AnnoncementCardMdUp = ({
               <Typography
                 component="span"
                 sx={{
-                  fontFamily: "Inter",
-                  color: "#486284FF",
+                  fontFamily: "Inter, sans-serif",
+                  color: "#486284",
                   fontSize: "12px",
                   lineHeight: 1,
                   letterSpacing: 0,
@@ -96,18 +97,18 @@ const AnnoncementCardMdUp = ({
               component="div"
               sx={{
                 textAlign: "left",
-                fontFamily: "Inter",
-                color: "#00000091",
+                fontFamily: "Inter, sans-serif",
+                color: "rgba(0, 0, 0, 0.57)",
                 fontSize: "16px",
                 lineHeight: 1,
                 letterSpacing: 0,
                 wordWrap: "break-word",
-                width: "621px",
+                width: "450px",
                 height: "47px",
               }}
             >
-              {description.length > 200
-                ? description.slice(0, 200) + "..."
+              {description.length > 150
+                ? description.slice(0, 150) + "..."
                 : description}
             </Typography>
             <Box
@@ -127,7 +128,7 @@ const AnnoncementCardMdUp = ({
                 <Typography
                   component="span"
                   sx={{
-                    fontFamily: "Inter",
+                    fontFamily: "Inter, sans-serif",
                     color: "#000000FF",
                     fontSize: "14px",
                     lineHeight: 1.4,
@@ -144,7 +145,7 @@ const AnnoncementCardMdUp = ({
                 <Typography
                   component="span"
                   sx={{
-                    fontFamily: "Inter",
+                    fontFamily: "Inter, sans-serif",
                     color: "#000000FF",
                     fontSize: "14px",
                     lineHeight: 1.4,
@@ -163,8 +164,8 @@ const AnnoncementCardMdUp = ({
               justifyContent: "space-evenly",
               alignItems: "center",
               borderLeft: "1px solid #2147b280",
-              fontFamily: "Inter",
-              color: "#486284FF",
+              fontFamily: "Inter, sans-serif",
+              color: "#3E4FA8",
               fontSize: "14px",
               lineHeight: 1,
               letterSpacing: 0,
@@ -172,17 +173,8 @@ const AnnoncementCardMdUp = ({
               width: "100px",
             }}
           >
-            <Typography>voir plus</Typography>
-            <Box
-              sx={{
-                width: "24px",
-                height: "24px",
-                borderRadius: "8px",
-                border: "1px solid",
-              }}
-            >
-              <KeyboardArrowRightIcon />
-            </Box>
+            <Typography>Voir plus</Typography>
+            <SeeDetailsButton/>
           </Box>
         </Card>
   )

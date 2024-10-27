@@ -1,7 +1,7 @@
 import { useMediaQuery, useTheme } from "@mui/material";
 import PropTypes from "prop-types";
-import AnnoncementCardMdUp from "../Cards/AnnoncementCardMdUp";
-import AnnoncementCardSmDown from "../Cards/AnnoncementCardSmDown";
+import AnnoncementCardMdUp from "../../Cards/AnnoncementCardMdUp";
+import AnnoncementCardSmDown from "../../Cards/AnnoncementCardSmDown";
 
 const AnnoncementCardComponent = ({
   image,
