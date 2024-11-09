@@ -1,9 +1,11 @@
 import AnnoncementWithPagination from "./AnnoncementWithPagination";
+import { AnnoncementSocietyType } from "../../Common/Context";
 
 
 const EntrepriseJobAnnoncement = () => {
     const allAvailableJobs = [
         {
+          _id: "123456789",
           title: "Chef d'équipe",
           description:
             "On a besoin d'un chef d'équipe pour le suivi des chantiers, la cordination avec les technicien et transpory",
@@ -15,6 +17,7 @@ const EntrepriseJobAnnoncement = () => {
           },
         },
         {
+          _id: "123456780",
           title: "Ingénieur Energie renouvelable",
           description:
             "green power cherche un ingénieur d'étude pour des grandes installations PV avec un salaire motivan green power cherche un ingénieur d'étude pour des grandes installations PV avec un salaire motivant",
@@ -26,6 +29,7 @@ const EntrepriseJobAnnoncement = () => {
           },
         },
         {
+          _id: "123456781",
           title: "Electricien",
           description:
             "Bonjour, =====================================================================================================...",
@@ -37,6 +41,7 @@ const EntrepriseJobAnnoncement = () => {
           },
         },
         {
+          _id: "123456782",
           title: "Formation couplage",
           description:
             "Familirization avec les energies renouvelables et les bases des installations PV",
@@ -48,6 +53,7 @@ const EntrepriseJobAnnoncement = () => {
           },
         },
         {
+          _id: "123456783",
           title: "Formation PV",
           description:
             "Familirization avec les energies renouvelables et les bases des installations PV",
@@ -59,11 +65,10 @@ const EntrepriseJobAnnoncement = () => {
           },
         },
       ];
-    
       return (
-        <>
-          <AnnoncementWithPagination itemsPerPage={3} data={allAvailableJobs} />
-        </>
+        <AnnoncementSocietyType.Provider value>
+          <AnnoncementWithPagination itemsPerPage={10} data={allAvailableJobs} />
+        </AnnoncementSocietyType.Provider>
       );
 }
 

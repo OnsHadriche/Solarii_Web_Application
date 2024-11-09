@@ -37,15 +37,15 @@ const EmployeeListContainer = ({ title }) => {
         }}
       >
         <SmallCardEmplyeeCard />
-        <LineSeparator />
+        <LineSeparator width={"252px"} />
         <SmallCardEmplyeeCard />
-        <LineSeparator />
+        <LineSeparator width={"252px"}/>
         <SmallCardEmplyeeCard />
-        <LineSeparator />
+        <LineSeparator width={"252px"}/>
         <SmallCardEmplyeeCard />
-        <LineSeparator />
+        <LineSeparator width={"252px"}/>
         <SmallCardEmplyeeCard />
-        <LineSeparator />
+        <LineSeparator width={"252px"}/>
         <Box
           sx={{
             display: "flex",

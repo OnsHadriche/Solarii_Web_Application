@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const SeeDetailsButton = () => {
+
   return (
     <Box
     sx={{
@@ -16,5 +17,4 @@ const SeeDetailsButton = () => {
   </Box>
   )
 }
-
 export default SeeDetailsButton

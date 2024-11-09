@@ -4,6 +4,7 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import PropTypes from "prop-types";
 import SeeDetailsButton from "../Common/SeeDetailsButton";
+import { Link } from "react-router-dom";
 
 const AnnoncementCardSmDown = ({
   title,
@@ -150,8 +151,10 @@ const AnnoncementCardSmDown = ({
           textTransform: "none",
           paddingRight: "15px",
         }}
+        component={Link}
+        to={"eefrvcdvdf"}
       >
-    <SeeDetailsButton/>
+    <SeeDetailsButton />
       </Box>
     </Card>
   );

@@ -3,6 +3,7 @@ import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
 import { Box, Card, Typography } from "@mui/material";
 import SeeDetailsButton from "../Common/SeeDetailsButton";
+import { Link } from "react-router-dom";
 const SmallTrainingNotificationCard = ({ SocietyName, startDate, title }) => {
   return (
     <Card
@@ -83,6 +84,8 @@ const SmallTrainingNotificationCard = ({ SocietyName, startDate, title }) => {
             justifyContent: "space-between",
             alignItems: "center",
           }}
+          component={Link}
+          to={"aaaaaaaa"}
         >
           <Typography
             sx={{
@@ -97,7 +100,7 @@ const SmallTrainingNotificationCard = ({ SocietyName, startDate, title }) => {
           >
             {title}
           </Typography>
-          <SeeDetailsButton/>
+          <SeeDetailsButton />
         </Box>
       </Box>
     </Card>

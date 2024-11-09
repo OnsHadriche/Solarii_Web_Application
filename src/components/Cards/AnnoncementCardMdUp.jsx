@@ -9,6 +9,8 @@ import {
   import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
   import PropTypes from "prop-types";
 import SeeDetailsButton from "../Common/SeeDetailsButton";
+import { Link, useLocation } from "react-router-dom";
+import { useContext } from "react";
 
 const AnnoncementCardMdUp = ({
     image,
@@ -16,6 +18,7 @@ const AnnoncementCardMdUp = ({
     description,
     SocietyName,
     startDate,
+    elementId
   }) => {
   return (
     <Card
@@ -32,7 +35,7 @@ const AnnoncementCardMdUp = ({
             maxWidth: { md: "700px", lg: "1100px" },
           }}
         >
-          <CardActionArea
+          {image && <CardActionArea
             sx={{
               borderRadius: "78px",
               flexShrink: 0,
@@ -47,7 +50,9 @@ const AnnoncementCardMdUp = ({
               display: { md: "none", lg: "block" },
               paddingTop: "7px",
             }}
-          ></CardActionArea>
+            
+          ></CardActionArea>}
+          
           <Box
             sx={{
               display: "flex",
@@ -172,19 +177,22 @@ const AnnoncementCardMdUp = ({
               textTransform: "none",
               width: "100px",
             }}
+            component={Link}
+            to={elementId}
           >
             <Typography>Voir plus</Typography>
-            <SeeDetailsButton/>
+            <SeeDetailsButton />
           </Box>
         </Card>
   )
 }
 
 AnnoncementCardMdUp.propTypes = {
-    image: PropTypes.string.isRequired,
+    image: PropTypes.string,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     SocietyName: PropTypes.string.isRequired,
     startDate: PropTypes.string.isRequired,
+    elementId: PropTypes.string.isRequired,
   };
 export default AnnoncementCardMdUp

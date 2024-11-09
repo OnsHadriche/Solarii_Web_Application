@@ -1,29 +1,31 @@
 import React from "react";
 import JobSolariHeader from "../components/Cards/JobSolariHeader";
-import SubNavBar from "../components/Common/SubNavBar";
-import WorkOppBodySection from "../components/Features/SolariiJob/WorkOppBodySection";
-import { Box, Typography } from "@mui/material";
+
+import { Box } from "@mui/material";
+import SubNavBarWithNavigation from "../components/Common/SubNavBarWithNavigation";
+import { Outlet } from "react-router-dom";
 
 const SolariiJobPage = () => {
   const tabs = [
-    { label: "Entreprise", content: <Typography>Offre d'emploi</Typography> },
+    { label: "entreprise", link:  "entreprise"},
     {
-      label: "Offre d'emploi",
-      content: <WorkOppBodySection />,
+      label: "offre d'emploi",
+      link: "emplois",
     },
     {
-      label: "Formation",
-      content: <Typography>Formation</Typography>,
+      label: "formation",
+      link: "formation",
     },
     {
-      label: "Sous-traitance",
-      content: <Typography>Sous-traitance</Typography>,
+      label: "sous-traitance",
+      link: "sous-traitance",
     }
   ];
   return (
     <Box sx={{ boxSizing: "border-box" }}>
       <JobSolariHeader />
-      <SubNavBar tabs={tabs} />
+      <SubNavBarWithNavigation originalPath= {"solari-job"} navlinks={tabs} />
+      <Outlet/>
     </Box>
   );
 };

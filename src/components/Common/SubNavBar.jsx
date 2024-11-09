@@ -33,9 +33,9 @@ function a11yProps(index) {
   };
 }
 
-export default function SubNavBar({ tabs }) {
+export default function SubNavBar({ tabs, defaultValue }) {
 
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(defaultValue);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

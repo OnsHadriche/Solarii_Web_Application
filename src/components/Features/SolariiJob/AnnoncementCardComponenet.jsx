@@ -9,20 +9,21 @@ const AnnoncementCardComponent = ({
   description,
   SocietyName,
   startDate,
+  elementId
 }) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
-  console.log(isMd);
-
+  
   return (
     <>
       {isMd ? (
         <AnnoncementCardMdUp
-          image={image}
+          image={image? image: null}
           title={title}
           description={description}
           SocietyName={SocietyName}
           startDate={startDate}
+          elementId={elementId}
         />
       ) : (
         <AnnoncementCardSmDown
@@ -36,10 +37,11 @@ const AnnoncementCardComponent = ({
   );
 };
 AnnoncementCardComponent.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   SocietyName: PropTypes.string.isRequired,
   startDate: PropTypes.string.isRequired,
+  elementId: PropTypes.string.isRequired,
 };
 export default AnnoncementCardComponent;
