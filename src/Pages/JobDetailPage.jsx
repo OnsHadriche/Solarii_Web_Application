@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Paper,
@@ -11,9 +11,14 @@ import {
 } from "@mui/material";
 import LineSeparator from "../components/Common/LineSeparator";
 import "../Style/JobDetailPage.css";
+import JobApply from "../components/Features/SolariiJob/JobApply";
 
 function JobDetailPage() {
   const isSmallScreen = useMediaQuery("(max-width: 900px)");
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <Box
@@ -116,19 +121,18 @@ function JobDetailPage() {
               }}
             >
               <Typography variant="h6" color="primary" gutterBottom>
-                 <strong>Entreprise:</strong> 
+                <strong>Entreprise:</strong>
               </Typography>
               <Typography variant="body2" color="textSecondary">
-              Green Power Energy
+                Green Power Energy
               </Typography>
 
               <Typography variant="body2" color="textSecondary">
-                <strong>Taille:</strong> 
+                <strong>Taille:</strong>
               </Typography>
               <Typography variant="body2" color="textSecondary">
-              50 - 100 employees
+                50 - 100 employees
               </Typography>
-              
             </Box>
             <Box
               sx={{
@@ -138,19 +142,18 @@ function JobDetailPage() {
               }}
             >
               <Typography variant="h6" color="primary" gutterBottom>
-                 <strong>Entreprise:</strong> 
+                <strong>Entreprise:</strong>
               </Typography>
               <Typography variant="body2" color="textSecondary">
-              Green Power Energy
+                Green Power Energy
               </Typography>
 
               <Typography variant="body2" color="textSecondary">
-                <strong>Addresse:</strong> 
+                <strong>Addresse:</strong>
               </Typography>
               <Typography variant="body2" color="textSecondary">
-             Sfax - tunis
+                Sfax - tunis
               </Typography>
-              
             </Box>
             {/* <Box>
               
@@ -164,15 +167,14 @@ function JobDetailPage() {
                 <strong>Certification:</strong> ISO 9001
               </Typography>
             </Box> */}
-            
           </Box>
-          <Box sx={{width:"100%", height:"30px"}}>
-            <LineSeparator width={"100%"}/>
+          <Box sx={{ width: "100%", height: "30px" }}>
+            <LineSeparator width={"100%"} />
             <Button
               size="small"
               variant="contained"
               color="primary"
-              sx={{  }}
+              sx={{}}
               onClick={() => console.log("More info clicked")}
             >
               View More Info
@@ -205,9 +207,15 @@ function JobDetailPage() {
 
         {/* Apply Button */}
         <Box sx={{ textAlign: "center", marginTop: 2 }}>
-          <Button variant="contained" color="primary" size="large">
+          <Button variant="contained" color="primary" size="large" onClick={handleOpen}>
             Postuler
           </Button>
+          <JobApply
+            open={open}
+            onClose={handleClose}
+            company="Green Power Energie"
+            position="Chef chantier"
+          />
         </Box>
       </Box>
     </Box>
