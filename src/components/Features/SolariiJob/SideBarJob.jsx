@@ -19,7 +19,7 @@ const SideBarJob = (props) => {
       <Box
         className={"box-container"}
         sx={{
-          width: props.isSmallScreen ? "100%" : "220px",
+          width: props.isSmallScreen ? "93%" : "220px",
           p: 3,
         }}
       >
