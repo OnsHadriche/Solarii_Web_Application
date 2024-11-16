@@ -5,6 +5,7 @@ import { Typography } from "@mui/material";
 import TrainingAnnoncementSection from "./components/Features/SolariiJob/TrainingAnnoncementSection";
 import WorkOppBodySection from "./components/Features/SolariiJob/WorkOppBodySection";
 import JobDetailPage from "./Pages/JobDetailPage";
+import EntrepriseLisJobs from "./Pages/EntrepriseLisJobs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="formation" element={<TrainingAnnoncementSection />} />
           <Route path="emplois" element={<WorkOppBodySection />}/>
           <Route path="emplois/:id" element={<JobDetailPage />} />
+          <Route path="emplois/:name/:id" element={<EntrepriseLisJobs />} />
           <Route
             path="sous-traitance"
             element={<Typography>sous-traitance</Typography>}

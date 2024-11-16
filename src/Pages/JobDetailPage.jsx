@@ -39,7 +39,7 @@ function JobDetailPage() {
         sx={{ flexGrow: 1, display: "flex", flexDirection: "column", gap: 2 }}
       >
         {/* Company Info */}
-        <CompanyInformationCard />
+        <CompanyInformationCard displayButton={true}/>
         {/* Job Description */}
         <AnnonceDescription />
         {/* Apply Button */}
