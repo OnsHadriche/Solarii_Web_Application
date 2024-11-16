@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const CompanyInformationCard = ({displayButton}) => {
   const infoFields = [
     "Entreprise",
-    "Num de Téléphone",
+    "Téléphone",
     "E-mail",
     "Adresse",
     "Taille",
@@ -22,7 +22,7 @@ const CompanyInformationCard = ({displayButton}) => {
     " Green Power Energie",
     " (+216) 80 106 900",
     "info@gpcenergy.com.tn",
-    "Siège  Route de Soukra km 4, 3052 Sfax - Tunisie",
+    "Siège  Route de Soukra km 4",
     "Entre 400 et 500",
   ];
   const colorBlueGrey = blueGrey[300];
