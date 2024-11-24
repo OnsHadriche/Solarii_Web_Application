@@ -10,7 +10,7 @@ import { blueGrey } from "@mui/material/colors";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CompanyInformationCard = ({displayButton}) => {
+const CompanyInformationCard = ({displayButton, infoType}) => {
   const infoFields = [
     "Entreprise",
     "Téléphone",
@@ -108,7 +108,7 @@ const CompanyInformationCard = ({displayButton}) => {
    { displayButton &&    <Box sx={{ display: "flex", flexDirection: "row-reverse", m: 2 }}>
           <Button variant="contained"
           component={Link}
-          to={`/solari-job/emplois/${valueFields[0].replace(/\s+/g, '').toLowerCase()}/262356`}>Voir plus d'annonce</Button>
+          to={`/solari-job/${infoType}/${valueFields[0].replace(/\s+/g, '').toLowerCase()}/262356`}>Voir plus d'annonce</Button>
         </Box>}
       </Box>
     </>

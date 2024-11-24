@@ -3,10 +3,10 @@ import { Box } from '@mui/material'
 import CompanyInformationCard from '../../Cards/CompanyInformationCard'
 import { EntrepriseDescription } from '../../Cards/EntrepriseDescription'
 
-function EntrepriseDetails() {
+function EntrepriseDetails({infoType}) {
   return (
     <Box >
-        <CompanyInformationCard displayButton={false}/>
+        <CompanyInformationCard displayButton={false} infoType={infoType}/>
         <EntrepriseDescription/>
     </Box>
   )

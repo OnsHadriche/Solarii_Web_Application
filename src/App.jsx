@@ -6,6 +6,7 @@ import TrainingAnnoncementSection from "./components/Features/SolariiJob/Trainin
 import WorkOppBodySection from "./components/Features/SolariiJob/WorkOppBodySection";
 import JobDetailPage from "./Pages/JobDetailPage";
 import EntrepriseLisJobs from "./Pages/EntrepriseLisJobs";
+import TrainingDetailPage from "./Pages/TrainingDetailPage";
 
 function App() {
   return (
@@ -17,9 +18,11 @@ function App() {
             element={<Typography>Entreprise</Typography>}
           />
           <Route path="formation" element={<TrainingAnnoncementSection />} />
+          <Route path="formation/:id" element={<TrainingDetailPage />} />
           <Route path="emplois" element={<WorkOppBodySection />}/>
           <Route path="emplois/:id" element={<JobDetailPage />} />
           <Route path="emplois/:name/:id" element={<EntrepriseLisJobs />} />
+          <Route path="formation/:name/:id" element={<EntrepriseLisJobs />} />
           <Route
             path="sous-traitance"
             element={<Typography>sous-traitance</Typography>}

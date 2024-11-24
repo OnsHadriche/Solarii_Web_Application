@@ -1,22 +1,16 @@
 import React, { useState } from "react";
 import {
   Box,
-  Paper,
-  Typography,
   Button,
   useMediaQuery,
-  Card,
-  CardContent,
-  CardMedia,
 } from "@mui/material";
-import LineSeparator from "../components/Common/LineSeparator";
 import "../Style/JobDetailPage.css";
 import JobApply from "../components/Features/SolariiJob/JobApply";
 import CompanyInformationCard from "../components/Cards/CompanyInformationCard";
 import AnnonceDescription from "../components/Cards/AnnonceDescription";
 import SideBarJob from "../components/Features/SolariiJob/SideBarJob";
 
-function JobDetailPage() {
+function TrainingDetailPage() {
   const isSmallScreen = useMediaQuery("(max-width: 900px)");
   const [open, setOpen] = useState(false);
 
@@ -32,14 +26,14 @@ function JobDetailPage() {
         padding: 2,
       }}
     >
-      {/* Sidebar */}
-      <SideBarJob isSmallScreen = {isSmallScreen}/>
-      {/* Main Content Area */}
+   
+      {/* <SideBarJob isSmallScreen = {isSmallScreen}/> */}
+
       <Box
         sx={{ flexGrow: 1, display: "flex", flexDirection: "column", gap: 2 }}
       >
         {/* Company Info */}
-        <CompanyInformationCard displayButton={true} infoType={"entreprise"}/>
+        <CompanyInformationCard displayButton={true} infoType={"formation"}/>
         {/* Job Description */}
         <AnnonceDescription />
         {/* Apply Button */}
@@ -50,7 +44,7 @@ function JobDetailPage() {
             size="large"
             onClick={handleOpen}
           >
-            Postuler
+            Pré-inscription
           </Button>
           <JobApply
             open={open}
@@ -64,4 +58,4 @@ function JobDetailPage() {
   );
 }
 
-export default JobDetailPage;
+export default TrainingDetailPage;
