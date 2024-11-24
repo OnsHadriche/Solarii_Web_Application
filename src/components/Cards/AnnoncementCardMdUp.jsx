@@ -18,8 +18,10 @@ const AnnoncementCardMdUp = ({
     description,
     SocietyName,
     startDate,
-    elementId
+    elementId,
+    type
   }) => {
+    const linkTo = type === "job"? "/emplois" : "/formation"
   return (
     <Card
           sx={{
@@ -178,7 +180,7 @@ const AnnoncementCardMdUp = ({
               width: "100px",
             }}
             component={Link}
-            to={elementId}
+            to={`/solari-job${linkTo}/${elementId}`}
           >
             <Typography>Voir plus</Typography>
             <SeeDetailsButton />
@@ -194,5 +196,6 @@ AnnoncementCardMdUp.propTypes = {
     SocietyName: PropTypes.string.isRequired,
     startDate: PropTypes.string.isRequired,
     elementId: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
   };
 export default AnnoncementCardMdUp

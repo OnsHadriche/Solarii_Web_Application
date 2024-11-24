@@ -67,7 +67,7 @@ const EntrepriseJobAnnoncement = () => {
       ];
       return (
         <AnnoncementSocietyType.Provider value>
-          <AnnoncementWithPagination itemsPerPage={10} data={allAvailableJobs} />
+          <AnnoncementWithPagination itemsPerPage={10} data={allAvailableJobs} type= "job"/>
         </AnnoncementSocietyType.Provider>
       );
 }

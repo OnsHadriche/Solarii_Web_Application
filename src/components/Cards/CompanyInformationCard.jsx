@@ -29,11 +29,12 @@ const CompanyInformationCard = ({displayButton}) => {
   return (
     <>
       <Box
-        className={"box-container"}
+        className={displayButton? "box-container": "box-container-no-shadow"}
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
+          maxWidth: "900px"
         }}
       >
         <Box

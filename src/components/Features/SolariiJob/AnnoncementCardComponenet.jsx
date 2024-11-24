@@ -9,10 +9,12 @@ const AnnoncementCardComponent = ({
   description,
   SocietyName,
   startDate,
-  elementId
+  elementId,
+  type
 }) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
+
   
   return (
     <>
@@ -24,6 +26,7 @@ const AnnoncementCardComponent = ({
           SocietyName={SocietyName}
           startDate={startDate}
           elementId={elementId}
+          type = {type}
         />
       ) : (
         <AnnoncementCardSmDown
@@ -31,6 +34,7 @@ const AnnoncementCardComponent = ({
           description={description}
           SocietyName={SocietyName}
           startDate={startDate}
+          type = {type}
         />
       )}
     </>
@@ -43,5 +47,6 @@ AnnoncementCardComponent.propTypes = {
   SocietyName: PropTypes.string.isRequired,
   startDate: PropTypes.string.isRequired,
   elementId: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 export default AnnoncementCardComponent;

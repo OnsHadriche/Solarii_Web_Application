@@ -38,6 +38,14 @@
     background-color: #F2F7FF;
 }
 
+.box-container-no-shadow {
+    border: 1px solid rgba(163, 198, 216, 0.49);
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 2;
+    background-color: #F2F7FF;
+}
+
 @media (max-width: 900px){
     .sidebar-sub-title{
         padding: 2px 0px;

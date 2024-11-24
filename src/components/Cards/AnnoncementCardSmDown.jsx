@@ -11,7 +11,10 @@ const AnnoncementCardSmDown = ({
   description,
   SocietyName,
   startDate,
+  type
 }) => {
+  const linkTo = type === "job"? "/emplois" : "/formation"
+
   return (
     <Card
       sx={{
@@ -152,8 +155,8 @@ const AnnoncementCardSmDown = ({
           paddingRight: "15px",
         }}
         component={Link}
-        to={"eefrvcdvdf"}
-      >
+        to={`/solari-job${linkTo}/1235898`}
+        >
     <SeeDetailsButton />
       </Box>
     </Card>
@@ -165,5 +168,7 @@ AnnoncementCardSmDown.propTypes = {
   description: PropTypes.string.isRequired,
   SocietyName: PropTypes.string.isRequired,
   startDate: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+
 };
 export default AnnoncementCardSmDown;
