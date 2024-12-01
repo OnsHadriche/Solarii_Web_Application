@@ -24,6 +24,7 @@ function TrainingDetailPage() {
         flexDirection: isSmallScreen ? "column" : "row",
         gap: 2,
         padding: 2,
+        flex:1
       }}
     >
    

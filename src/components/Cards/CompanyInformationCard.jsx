@@ -34,7 +34,6 @@ const CompanyInformationCard = ({displayButton, infoType}) => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          maxWidth: "900px"
         }}
       >
         <Box
