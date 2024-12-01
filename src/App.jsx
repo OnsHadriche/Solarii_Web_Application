@@ -21,7 +21,7 @@ function App() {
           <Route path="formation/:id" element={<TrainingDetailPage />} />
           <Route path="emplois" element={<WorkOppBodySection />}/>
           <Route path="emplois/:id" element={<JobDetailPage />} />
-          <Route path="emplois/:name/:id" element={<EntrepriseLisJobs />} />
+          <Route path="entreprise/:name/:id" element={<EntrepriseLisJobs />} />
           <Route path="formation/:name/:id" element={<EntrepriseLisJobs />} />
           <Route
             path="sous-traitance"
